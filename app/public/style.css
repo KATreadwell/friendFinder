@@ -4,6 +4,10 @@
     background-size: cover;
 }
 
+#home{
+    background-color: lightblue;
+}
+
 body{
     background-image: url("./images/form.jpg");
     background-repeat: no-repeat;
