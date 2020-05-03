@@ -8,29 +8,40 @@
     />
     <script src="https://use.fontawesome.com/bf8a5574e6.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <
     <link rel="stylesheet" href="./style.css">
-    <title>Friend Finder Home</title>
+    <title>Super Mario Bros. Friend Finder Home</title>
   </head>
-  <body>
+  <body class="home">
     <div class="container">
-        <div class="jumbotron bg-light">
+        <div class="jumbotron">
             <h1 class="text-center"><i class="fa fa-users"></i> Super Mario Bros. Friend Finder</h1>
             <hr>
-            <h2 class="text-center">Answer some questions.  Find your Mario Bros. soul mate!</h2>
+            <h2>Answer some questions.</h2>  
             <br>
-            <div class="text-center">
-              <a href="tableView" class="btn btn-info btn-lg">
-                <i class="fa fa-list-alt"></i>View Tables</a>
-              <a href="/form"><button type="button" class="btn btn-lg btn-primary"><i class="fa fa-home"></i>Make Reservations</button></a>
+            <h2>Find your Mario Bros. soul mate!</h2>
+            <br>
+            <div>
+                <a href="/survey.html">
+                    <button type="button" class="btn btn-lg btn-primary">
+                        <h4>
+                            <i class="fa fa-list"> Survey</i>
+                        </h4>
+                </button> 
+            </div>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="container">
+            <p>
+        <a href="/api/friends">API Friends List</a>
+         | 
+        <a href="https://github.com/KATreadwell/friendFinder">GitHub Repo</a>
+            </p>
     </div>
-<br>
-<br>
-    <p><a href="/api/tables">API Table Link</a>
-       | 
-      <a href="/api/waitingList">API Wait List</a>
-  </p>
-
-
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,11 @@
-body{
+.home{
     background-image: url("./images/super_mario_bros.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-image: url("./images/form.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
