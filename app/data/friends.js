@@ -4,15 +4,15 @@
     "name":"Bowser",
     "photo":"https://www.mariowiki.com/images/8/82/BowserNSMBUDX.png",
     "scores": [
+        "1",
+        "1",
         "5",
         "1",
-        "4",
-        "4",
-        "5",
+        "3",
         "1",
-        "2",
+        "1",
+        "1",
         "5",
-        "4",
         "1"
       ]
   },
@@ -21,15 +21,15 @@
     "name":"Princess Peach",
     "photo":"https://www.mariowiki.com/images/b/b7/SuperMarioParty_Peach_2.png",
     "scores":[
-        "5",
-        "1",
-        "4",
         "4",
         "5",
         "1",
-        "2",
+        "1",
+        "1",
+        "1",
+        "1",
         "5",
-        "4",
+        "1",
         "1"
       ]
   },
@@ -38,16 +38,16 @@
     "name":"Mario",
     "photo":"https://www.mariowiki.com/images/2/25/Mario_New_Super_Mario_Bros_U_Deluxe.png",
     "scores":[
-        "5",
-        "1",
-        "4",
-        "4",
-        "5",
-        "1",
+        "3",
         "2",
+        "1",
         "5",
-        "4",
-        "1"
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "5"
       ]
   },
 
@@ -55,15 +55,15 @@
     "name":"Luigi",
     "photo":"https://www.mariowiki.com/images/e/e1/Luigi_New_Super_Mario_Bros_U_Deluxe.png",
     "scores":[
-        "5",
+        "3",
         "1",
-        "4",
-        "4",
+        "1",
         "5",
         "1",
         "2",
-        "5",
-        "4",
+        "1",
+        "1",
+        "1",
         "1"
       ]
   },
@@ -74,14 +74,14 @@
     "scores":[
         "5",
         "1",
-        "4",
-        "4",
+        "1",
+        "1",
         "5",
         "1",
-        "2",
-        "5",
-        "4",
-        "1"
+        "1",
+        "1",
+        "1",
+        "4"
       ]
   },
 
@@ -90,15 +90,15 @@
     "photo":"https://www.mariowiki.com/images/d/db/SMR_Toad.png",
     "scores":[
         "5",
+        "4",
         "1",
-        "4",
-        "4",
-        "5",
         "1",
-        "2",
-        "5",
-        "4",
-        "1"
+        "1",
+        "1",
+        "1",
+        "3",
+        "1",
+        "2"
       ]
   },
 
@@ -106,16 +106,16 @@
     "name":"Wario",
     "photo":"https://www.mariowiki.com/images/2/29/SMPWario.png",
     "scores": [
+        "1",
+        "3",
+        "3",
+        "4",
+        "1",
         "5",
         "1",
-        "4",
-        "4",
-        "5",
         "1",
-        "2",
         "5",
-        "4",
-        "1"
+        "4"
       ]
   },
 
@@ -123,15 +123,15 @@
     "name":"Waluigi",
     "photo":"https://www.mariowiki.com/images/2/27/SuperMarioParty_Waluigi.png",
     "scores":[
+        "1",
+        "3",
+        "3",
+        "4",
+        "1",
         "5",
         "1",
-        "4",
-        "4",
-        "5",
         "1",
-        "2",
         "5",
-        "4",
         "1"
       ]
   },
@@ -140,14 +140,14 @@
     "name":"Piranha",
     "photo":"https://www.mariowiki.com/images/d/d1/NSMBU_Piranha_Plant_in_Pipe_Artwork.png",
     "scores":[
+        "1",
+        "1",
+        "1",
+        "1",
         "5",
         "1",
-        "4",
-        "4",
         "5",
         "1",
-        "2",
-        "5",
         "4",
         "1"
       ]
@@ -157,15 +157,15 @@
     "name":"Princess Daisy",
     "photo":"https://www.mariowiki.com/images/9/90/MKT_Artwork_Daisy.png",
     "scores":[
-        "5",
+        "4",
         "1",
-        "4",
-        "4",
-        "5",
+        "1",
         "1",
         "2",
-        "5",
+        "1",
+        "1",
         "4",
+        "2",
         "1"
       ]
   }
