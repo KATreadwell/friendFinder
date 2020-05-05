@@ -1,5 +1,5 @@
 //save app data as an array of objects in below format:
-[
+module.exports = [
 {
     "name":"Bowser",
     "photo":"https://www.mariowiki.com/images/8/82/BowserNSMBUDX.png",

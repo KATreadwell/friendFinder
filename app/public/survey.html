@@ -7,19 +7,21 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- CSS & JS -->
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
+    
+    
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
     
     <script type="text/javascript">
         $(function() {
             $(".chosen-select").chosen();
         });
         </script>
-
-    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/bf8a5574e6.js"></script>
@@ -46,7 +48,7 @@
 
         <h3><strong>Question 1</strong></h3>
         <h4>You really, really like mushrooms.</h4>
-            <select class="chosen-select" style="width: 157px;" id="q1_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q1">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -64,7 +66,7 @@
 
         <h3><strong>Question 2</strong></h3>
         <h4>Pink is your favorite color.</h4>
-            <select class="chosen-select" style="width: 157px;" id="q2_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q2">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -82,7 +84,7 @@
 
         <h3><strong>Question 3</strong></h3>
         <h4>You home is decorated with medieval furnishings.  And drawbridges.  Over molten lava.</h4>
-            <select class="chosen-select" style="width: 157px;" id="q3_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q3">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -100,7 +102,7 @@
 
             <h3><strong>Question 4</strong></h3>
             <h4>You have a strong interest in plumbing.</h4>
-                <select class="chosen-select" style="width: 157px;" id="q4_chosen">
+                <select class="chosen-select" style="width: 157px;" id="q4">
                     <a class="chosen-single chosen-default">
                         <span>Select an Option</span>
                         <option></option>
@@ -118,7 +120,7 @@
 
             <h3><strong>Question 5</strong></h3>
             <h4>You can and will eat almost anything.</h4>
-                <select class="chosen-select" style="width: 157px;" id="q5_chosen">
+                <select class="chosen-select" style="width: 157px;" id="q5">
                     <a class="chosen-single chosen-default">
                         <span>Select an Option</span>
                         <option></option>
@@ -136,7 +138,7 @@
 
             <h3><strong>Question 6</strong></h3>
             <h4>You are insanely jealous of your brother(s).</h4>
-                <select class="chosen-select" style="width: 157px;" id="q6_chosen">
+                <select class="chosen-select" style="width: 157px;" id="q6">
                     <a class="chosen-single chosen-default">
                         <span>Select an Option</span>
                         <option></option>
@@ -154,7 +156,7 @@
 
             <h3><strong>Question 7</strong></h3>
             <h4>You like to hide in pipes and eat plumbers.</h4>
-            <select class="chosen-select" style="width: 157px;" id="q7_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q7">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -172,7 +174,7 @@
             
             <h3><strong>Question 8</strong></h3>
             <h4>People you are totally, completely uninterested in fight over you for your affection. This results in you getting frequently kidnapped.</h4>
-            <select class="chosen-select" style="width: 157px;" id="q8_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q8">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -190,7 +192,7 @@
             
             <h3><strong>Question 9</strong></h3>
             <h4>You are a troublemaker!</h4>
-            <select class="chosen-select" style="width: 157px;" id="q9_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q9">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -208,7 +210,7 @@
             
             <h3><strong>Question 10</strong></h3>
             <h4>You are vertically-challenged, but it's ok- you can jump really high!</h4>
-            <select class="chosen-select" style="width: 157px;" id="q10_chosen">
+            <select class="chosen-select" style="width: 157px;" id="q10">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <option></option>
@@ -261,6 +263,34 @@
       </div>
   </div>
 
+  <!-- <script>
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
   
+    var newCharacter = {
+      name: $("#name").val(),
+      photo: $("#photo").val(),
+      scores: [
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q7").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()
+      ]
+    };
+    $.post("/api/friends", newCharacter)
+    .then(function(data) {
+      // console.log("add.html", data);
+      alert("Added new character!")
+    })
+  });
+</script> -->
+
+<script type="text/javascript" src="/app.js"></script>
 </body>
 </html>
