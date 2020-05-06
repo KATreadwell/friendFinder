@@ -22,12 +22,15 @@ $("#submit").on("click", function (event) {
   };
   $.post("/api/friends", newCharacter)
   .then(function(data) {
-    //modal popup here
-    $("#match-name").text(data.name, data.photo);
-    let modal = $("#results-modal")
-      $("#results-modal").modal("show"); 
+    $("#match-name").text(data.name);
+    $("#match-img").attr("src", data.photo);
+    $("#results-modal").modal("toggle");
+
+    let modal = $(".modal")
+      $(".modal").modal("show"); 
       })
 });
+
 
 
 // var config = {

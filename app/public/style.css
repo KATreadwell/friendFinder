@@ -12,3 +12,7 @@ body{
     background-image: url("./images/form.jpg");
     background-size: contain;
 }
+
+/* img {
+    min-height: 500px;
+  } */

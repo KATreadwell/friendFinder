@@ -2,7 +2,7 @@
 module.exports = [
 {
     "name":"Bowser",
-    "photo":"https://www.mariowiki.com/images/8/82/BowserNSMBUDX.png",
+    "photo":"https://www.mariowiki.com/images/e/e9/Sunshinebowser.jpg",
     "scores": [
         "1",
         "1",
@@ -19,7 +19,7 @@ module.exports = [
 
   {
     "name":"Princess Peach",
-    "photo":"https://www.mariowiki.com/images/b/b7/SuperMarioParty_Peach_2.png",
+    "photo":"https://www.mariowiki.com/images/0/00/Peachbros3.jpg",
     "scores":[
         "4",
         "5",
@@ -36,7 +36,7 @@ module.exports = [
 
   {
     "name":"Mario",
-    "photo":"https://www.mariowiki.com/images/2/25/Mario_New_Super_Mario_Bros_U_Deluxe.png",
+    "photo":"https://www.mariowiki.com/images/f/ff/Super_Mario_Running_Artwork.jpg",
     "scores":[
         "3",
         "2",
@@ -53,7 +53,7 @@ module.exports = [
 
   {
     "name":"Luigi",
-    "photo":"https://www.mariowiki.com/images/e/e1/Luigi_New_Super_Mario_Bros_U_Deluxe.png",
+    "photo":"https://www.mariowiki.com/images/b/b3/NSMBDS_Luigi_Jumping_Artwork.png",
     "scores":[
         "3",
         "1",
