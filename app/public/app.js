@@ -2,9 +2,6 @@
 //   $(".chosen-select").chosen();
 // })
 
-
-
-
 $("#submit").on("click", function (event) {
   event.preventDefault();
   var newCharacter = {
@@ -26,10 +23,9 @@ $("#submit").on("click", function (event) {
   $.post("/api/friends", newCharacter)
   .then(function(data) {
     //modal popup here
-    $("#match-name").text(data.name);
+    $("#match-name").text(data.name, data.photo);
     let modal = $("#results-modal")
-      modal.modal(); 
-      $("#results-modal").modal("toggle"); 
+      $("#results-modal").modal("show"); 
       })
 });
 
