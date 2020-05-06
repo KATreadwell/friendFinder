@@ -53,7 +53,7 @@ module.exports = [
 
   {
     "name":"Luigi",
-    "photo":"https://www.mariowiki.com/images/b/b3/NSMBDS_Luigi_Jumping_Artwork.png",
+    "photo":"https://www.mariowiki.com/images/c/cf/NSMBW_Luigi_Jumping_Artwork.png",
     "scores":[
         "3",
         "1",
@@ -70,7 +70,7 @@ module.exports = [
 
   {
     "name":"Yoshi",
-    "photo":"https://www.mariowiki.com/images/4/4d/Yoshi_-_Mario_Party_10.png",
+    "photo":"https://www.mariowiki.com/images/f/fc/SMW_Art_-_Yoshi.png",
     "scores":[
         "5",
         "1",
@@ -104,7 +104,7 @@ module.exports = [
 
   {
     "name":"Wario",
-    "photo":"https://www.mariowiki.com/images/2/29/SMPWario.png",
+    "photo":"https://www.mariowiki.com/images/1/17/Wario_MK7.png",
     "scores": [
         "1",
         "3",
@@ -121,7 +121,7 @@ module.exports = [
 
   {
     "name":"Waluigi",
-    "photo":"https://www.mariowiki.com/images/2/27/SuperMarioParty_Waluigi.png",
+    "photo":"https://www.mariowiki.com/images/6/67/MTA_Models_Waluigi.png",
     "scores":[
         "1",
         "3",
@@ -138,7 +138,7 @@ module.exports = [
 
   {
     "name":"Piranha",
-    "photo":"https://www.mariowiki.com/images/d/d1/NSMBU_Piranha_Plant_in_Pipe_Artwork.png",
+    "photo":"https://www.mariowiki.com/images/5/55/MKAGPDX_Piranha_Plant.png",
     "scores":[
         "1",
         "1",
