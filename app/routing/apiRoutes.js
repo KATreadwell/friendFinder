@@ -3,19 +3,12 @@
 
 const friends = require("../data/friends.js")
 const fs = require("fs")
+const jquery = require("jquery")
 
 function apiRoutes(app) {
 
     app.post("/api/friends", (req, res) => {
         const newCharacter = req.body;
-        //this is where you want to put logic for best match
-        //2 starting var, lowest diff = 1000 and best match = [], for loop thru friends array (var Diff (for loop thru scores - take diff and loop thru each person, take absolute val))
-
-        console.log(newCharacter.scores)
-        console.log(friends[0].scores)
-
-        var differenceObj = {};
-        var bestMatch;
 
         // newCharacter.scores;
         // friends.score[0];
@@ -33,28 +26,29 @@ function apiRoutes(app) {
             for (var i = 0; i < friend.scores.length; i++) {
                 scoreCheck.push(Math.abs(parseInt(friend.scores[i]) - parseInt(newCharacter.scores[i])))
             }
-            //array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
             return scoreCheck.reduce(function (total, currentValue) {
                 return total + currentValue;
             }, 0);
-            // console.log(scoreCheckBowser);
         }
 
+        // let differenceObj = {};
+        // let bestMatch = {};
+        // let lowestDifference = 1000;
+
+
         friends.forEach(function (currentValue) {
+            //make variable = checkDiff and compare to lowestDiff, if less than BestMatch = currentVal, set lowestDiff to checkDiff
             differenceObj[currentValue.name] = checkDiff(currentValue);
-            console.log(differenceObj);
 
-            // let bestMatch = (Math.min(differenceObj.Name));
-            // console.log(bestMatch);
-            for (var i = 0; currentValue.length; i++) {
-                let bestMatch = Math.min(currentValue.scores);
-                // return bestMatch.Name;
-                console.log(bestMatch.Name)
-            }
+            console.log(differenceObj[currentValue.name])
 
+            // bestMatch = friends[1];
         })
+
+        
         friends.push(newCharacter);
-        res.send(friends[BestMatch]);
+        res.send(bestMatch);
     });
     app.get("/api/friends", (req, res) => {
         return res.json(friends);

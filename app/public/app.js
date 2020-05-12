@@ -3,7 +3,7 @@
 $("#submit").on("click", function (event) {
   event.preventDefault();
   
-  // if (validateForm()) {
+  if (validateForm()) {
   var newCharacter = {
     name: $("#name").val(),
     photo: $("#photo").val(),
@@ -29,26 +29,26 @@ $("#submit").on("click", function (event) {
       $(".modal").modal("show"); 
       })
 
-    // } else {
-    //       alert("Please fill out all fields before submitting!");
-    //     }
+    } else {
+          alert("Please fill out all fields before submitting!");
+        }
 });
 
-    // function validateForm() {
-    //   var isValid = true;
-    //   $(".form-control").each(function() {
-    //     if ($(this).val() === "") {
-    //       isValid = false;
-    //     }
-    //   });
+    function validateForm() {
+      var isValid = true;
+      $(".form-control").each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
 
-    //   $(".chosen-select").each(function() {
-    //     if ($(this).val() === "") {
-    //       isValid = false;
-    //     }
-    //   });
-    //   return isValid;
-    // }
+      $(".chosen-select").each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
+      return isValid;
+    }
 
   
 

@@ -11,13 +11,7 @@ const apiRoutes = require("./app/routing/apiRoutes.js")
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-//I want to show my backgrounds
 app.use(express.static(__dirname +'/app/public'));
-// app.get('/', function(req, res, next) {
-//     res.sendFile(path.join(__dirname, '/home.html'));
-// });
-
-// app.use(express.static("app/public"))
 
 htmlRoutes(app)
 apiRoutes(app)
