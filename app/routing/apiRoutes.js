@@ -9,6 +9,8 @@ function apiRoutes(app) {
 
     app.post("/api/friends", (req, res) => {
         const newCharacter = req.body;
+        let differenceObj = {};
+        let bestMatch = "";
 
         // newCharacter.scores;
         // friends.score[0];
@@ -32,23 +34,28 @@ function apiRoutes(app) {
             }, 0);
         }
 
-        // let differenceObj = {};
-        // let bestMatch = {};
-        // let lowestDifference = 1000;
-
-
+        
         friends.forEach(function (currentValue) {
             //make variable = checkDiff and compare to lowestDiff, if less than BestMatch = currentVal, set lowestDiff to checkDiff
             differenceObj[currentValue.name] = checkDiff(currentValue);
+            
+            let lowestDifference = 1000;
 
-            console.log(differenceObj[currentValue.name])
+            if (differenceObj[currentValue.name] < lowestDifference) {
+                bestMatch = differenceObj[currentValue.name];
+            }
+            bestMatch = differenceObj[currentValue.name];
 
-            // bestMatch = friends[1];
+            // console.log("diff obj " + (differenceObj[currentValue.name]));
+
+            console.log("best match " + bestMatch);
+
+          
         })
 
-        
+        console.log(bestMatch)
         friends.push(newCharacter);
-        res.send(bestMatch);
+        res.send(friends[0]);
     });
     app.get("/api/friends", (req, res) => {
         return res.json(friends);
