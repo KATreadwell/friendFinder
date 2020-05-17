@@ -34,31 +34,16 @@ function apiRoutes(app) {
             }, 0);
         }
 
-        let lowestDifference = null; //  37
-        let lowestDifferenceFriend = null; // {}
+        let lowestDifference = null; 
+        let lowestDifferenceFriend = null; 
 
         friends.forEach(function (friend) {
-            //make variable = checkDiff and compare to lowestDiff, if less than BestMatch = currentVal, set lowestDiff to checkDiff
-            differenceObj[friend.name] = checkDiff(friend); // score
-            // differenceObj.bowser = 37;
-            
-            // let lowestDifference = 1000;
-
-            // if (differenceObj[friend.name] < lowestDifference) {
-            //     bestMatch = differenceObj[friend.name];
-            // }
-            // bestMatch = differenceObj[friend.name];
-
-            // console.log("diff obj " + (differenceObj[friend.name]));
-
-            console.log(differenceObj[friend.name]);
+            differenceObj[friend.name] = checkDiff(friend); 
             if(typeof lowestDifference!=='number' || lowestDifference > differenceObj[friend.name] ) {
                 lowestDifferenceFriend = friend;
                 lowestDifference =  differenceObj[friend.name];
             }
         })
-
-        console.log(bestMatch)
         friends.push(newCharacter);
         res.send(lowestDifferenceFriend);
     });
