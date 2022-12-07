@@ -4,7 +4,7 @@
   "description": "Every wonder which \"Super Mario Bros.\" character would make a great friend for you?  Wonder no longer!  Use \"Friend Finder\" to discover your perfect match!",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "jquery": "^3.5.1",
     "nodemon": "^2.0.3",
     "path": "^0.12.7"
